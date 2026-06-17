@@ -23,7 +23,7 @@ const About = () => {
               <p className="mb-5" style={{ color: 'var(--secondary-text)', lineHeight: 1.8 }}>
                 Our commitment to excellence extends beyond the plate, offering a sensory journey that engages all your senses in an atmosphere of refined luxury.
               </p>
-              <img src="../images/about.png" alt="Chef Signature" style={{ height: '60px', filter: 'invert(1)' }} onError={(e) => e.target.style.display = 'none'} />
+              <img src="/images/signature.png" alt="Chef Signature" style={{ height: '60px', filter: 'invert(1)' }} onError={(e) => e.target.style.display = 'none'} />
             </motion.div>
           </div>
           <div className="col-lg-6">
@@ -46,7 +46,7 @@ const About = () => {
                 }}
               />
               <img 
-                src="/images/about.png" 
+                src="../images/about.png" 
                 alt="Exquisite Gourmet Food" 
                 className="img-fluid"
                 style={{ position: 'relative', zIndex: 1, objectFit: 'cover', height: '600px', width: '100%' }}
