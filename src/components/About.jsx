@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import aboutImg from '../assets/images/about.png';
 
 const About = () => {
   return (
@@ -32,24 +33,24 @@ const About = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 1 }}
-              style={{ position: 'relative' }}
+              style={{ position: 'relative', paddingRight: '20px', paddingTop: '20px' }}
             >
               <div
                 style={{
                   position: 'absolute',
-                  top: '-20px',
-                  right: '-20px',
-                  width: '100%',
-                  height: '100%',
+                  top: 0,
+                  right: 0,
+                  bottom: '20px',
+                  left: '20px',
                   border: '2px solid var(--accent-gold)',
                   zIndex: 0
                 }}
               />
               <img
-                src="/images/about.png"
+                src={aboutImg}
                 alt="Exquisite Gourmet Food"
                 className="img-fluid"
-                style={{ position: 'relative', zIndex: 1, objectFit: 'cover', height: '600px', width: '100%' }}
+                style={{ display: 'block', position: 'relative', zIndex: 1, objectFit: 'cover', width: '100%', height: '600px' }}
               />
             </motion.div>
           </div>
@@ -59,4 +60,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default About;//

@@ -1,4 +1,5 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
+import heroImg from '../assets/images/hero.png';
 
 const Hero = () => {
   const { scrollY } = useScroll();
@@ -8,7 +9,7 @@ const Hero = () => {
   return (
     <section
       style={{
-        position: 'relative',
+        position: 'relative',//
         height: '100vh',
         overflow: 'hidden',
         display: 'flex',
@@ -23,7 +24,7 @@ const Hero = () => {
           left: 0,
           width: '100%',
           height: '120%',
-          backgroundImage: 'url(/images/hero.png)',
+          backgroundImage: `url(${heroImg})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           y,
