@@ -1,0 +1,132 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+:root {
+  --primary-bg: #0B0B0B;
+  --secondary-bg: #161616;
+  --accent-gold: #D4AF37;
+  --hover-gold: #E7C567;
+  --primary-text: #F5F5F5;
+  --secondary-text: #B7B7B7;
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Poppins', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  cursor: none; /* Hide default cursor for custom one */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--primary-text);
+  font-weight: 400;
+}
+
+a {
+  color: var(--primary-text);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-gold);
+}
+
+::selection {
+  background: var(--accent-gold);
+  color: var(--primary-bg);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--primary-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-gold);
+}
+
+/* Utilities */
+.text-gold {
+  color: var(--accent-gold) !important;
+}
+
+.bg-dark-secondary {
+  background-color: var(--secondary-bg) !important;
+}
+
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.glassmorphism {
+  background: rgba(11, 11, 11, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.btn-gold {
+  background: transparent;
+  color: var(--accent-gold);
+  border: 1px solid var(--accent-gold);
+  padding: 12px 30px;
+  border-radius: 0;
+  font-family: var(--font-body);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn-gold::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: var(--accent-gold);
+  transition: all 0.4s ease;
+  z-index: -1;
+}
+
+.btn-gold:hover {
+  color: var(--primary-bg);
+}
+
+.btn-gold:hover::before {
+  width: 100%;
+}
+
+.section-padding {
+  padding: 100px 0;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 60px 0;
+  }
+}
