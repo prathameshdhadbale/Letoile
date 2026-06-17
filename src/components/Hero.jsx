@@ -6,17 +6,17 @@ const Hero = () => {
   const opacity = useTransform(scrollY, [0, 500], [1, 0]);
 
   return (
-    <section 
-      style={{ 
-        position: 'relative', 
-        height: '100vh', 
+    <section
+      style={{
+        position: 'relative',
+        height: '100vh',
         overflow: 'hidden',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center'
       }}
     >
-      <motion.div 
+      <motion.div
         style={{
           position: 'absolute',
           top: 0,
@@ -30,9 +30,9 @@ const Hero = () => {
           zIndex: -2
         }}
       />
-      
+
       {/* Dark overlay */}
-      <div 
+      <div
         style={{
           position: 'absolute',
           top: 0,
@@ -44,7 +44,7 @@ const Hero = () => {
         }}
       />
 
-      <motion.div 
+      <motion.div
         className="text-center px-4"
         style={{ opacity, zIndex: 1 }}
       >
@@ -57,13 +57,13 @@ const Hero = () => {
         >
           Welcome to L'Étoile Noire
         </motion.p>
-        
+
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.7 }}
           className="font-heading mb-4"
-          style={{ 
+          style={{
             fontSize: 'clamp(3rem, 8vw, 6rem)',
             lineHeight: 1.1,
             color: '#fff'

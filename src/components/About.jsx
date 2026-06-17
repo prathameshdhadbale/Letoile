@@ -14,7 +14,7 @@ const About = () => {
             >
               <h2 className="text-gold mb-3" style={{ fontSize: '1rem', letterSpacing: '3px', textTransform: 'uppercase' }}>Our Story</h2>
               <h3 className="font-heading mb-4" style={{ fontSize: 'clamp(2rem, 4vw, 3.5rem)', lineHeight: 1.2 }}>
-                A Legacy of <br/>
+                A Legacy of <br />
                 <span style={{ fontStyle: 'italic', color: 'var(--secondary-text)' }}>Culinary Excellence</span>
               </h3>
               <p className="mb-4" style={{ color: 'var(--secondary-text)', lineHeight: 1.8 }}>
@@ -34,7 +34,7 @@ const About = () => {
               transition={{ duration: 1 }}
               style={{ position: 'relative' }}
             >
-              <div 
+              <div
                 style={{
                   position: 'absolute',
                   top: '-20px',
@@ -45,9 +45,9 @@ const About = () => {
                   zIndex: 0
                 }}
               />
-              <img 
-                src="/images/about.png" 
-                alt="Exquisite Gourmet Food" 
+              <img
+                src="/images/about.png"
+                alt="Exquisite Gourmet Food"
                 className="img-fluid"
                 style={{ position: 'relative', zIndex: 1, objectFit: 'cover', height: '600px', width: '100%' }}
               />
